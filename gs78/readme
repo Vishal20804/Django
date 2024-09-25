@@ -1,0 +1,28 @@
+cache
+#cache implementation persite
+    #here implementation
+MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    #here implementation
+    "django.middleware.cache.UpdateCacheMiddleware",
+
+    "django.middleware.common.CommonMiddleware",
+    #here 2nd 
+    "django.middleware.cache.FetchFromeCacheMiddleware",
+
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+
+# for databse cache
+
+CACHE={
+    'default':{
+        'BACKEND':'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION':'enroll_cache'
+    }
+}

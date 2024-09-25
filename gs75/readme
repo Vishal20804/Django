@@ -1,0 +1,13 @@
+page session expired
+
+in settings.py
+SESSION_COOKIE_AGE=10
+
+in views
+def checktestcookie(request):
+    if 'name' in request.session:
+        name =request.session['name']
+        request.session.modified=True  #  request.session.modified=True this is imp
+        return render(request,'student/testcookie.html',{'name':name})
+    else:
+        return HttpResponse("your session expired")

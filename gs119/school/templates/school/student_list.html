@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <table>
+        <h1>Here Generic View</h1>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Course</th>
+        {% for student in student_list %}
+        <tr>
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.roll}}</td>
+            <td>{{student.course}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+
+</html>

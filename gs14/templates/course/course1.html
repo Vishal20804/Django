@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(232, 213, 213);">
+    <h2>Example 1</h2>
+{% if nm and st %}
+<h3>{{st}} seats are avilable for {{nm}} course</h3>
+
+{% endif %}
+
+<h2>Example 2</h2>
+
+{% if nm or st %}
+<h3>{{st}} seats are avilable for {{nm}} course</h3>
+
+{% endif %}
+<h2> Example 3</h2>
+{% if not st %}
+<h3>{{st}} seats are not</h3>
+
+{% endif %}
+
+</body>
+</html>

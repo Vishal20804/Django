@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+<style>
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="container mt-5"></div>
+    <h2 class="text-center alert alert-danger">CRUD Operation</h2>
+    {% block content %}
+    {% endblock content %}
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us:</p>
+            <ul>
+                <li>
+                    <a href="sharmavishal78678@gmail.com">Email: sharmavishal78678@gmail.com</a>
+                </li>
+                <li>
+                    <a href="tel:6392441873">Phone: 6392441873</a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/vishal-sharma-b434b8221" target="_blank">
+                        vishal-sharma
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+<script src="{% static 'enroll/js/jquery.js' %}"></script>
+<script src="{% static 'enroll/js/popper.js' %}"></script>
+<script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+</body>
+</html>

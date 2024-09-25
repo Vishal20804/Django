@@ -1,0 +1,13 @@
+# signal
+# signals.py file all information 
+
+# # in app.py
+# #     def ready(self):
+# #         import blog.signals
+
+
+# in init.py 
+# default_app_config='blog.apps.BlogConfig'
+
+
+#learn from goggle custom signal

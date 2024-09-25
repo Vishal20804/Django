@@ -1,0 +1,6 @@
+# # # widgets
+# # name=forms.CharField(widget=forms.PasswordInput)
+# # name=forms.CharField(widget=forms.FileInput)
+
+
+#     name=forms.CharField(widget=forms.TextInput(attrs={'class':'somecss1'}))

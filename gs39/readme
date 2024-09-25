@@ -1,0 +1,3 @@
+# fORM field type 
+#     name=forms.CharField(strip= True,min_length=3,max_length=130,error_messages={'required':'enter name'})
+

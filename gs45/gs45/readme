@@ -1,0 +1,17 @@
+<!-- Forms error and field error
+{{form.non_field_errors}}
+
+ <span class="errorlist">{{field.errors|striptags}}</span>
+ -->
+
+ // for more than one error
+
+ {% for error in field.errors %}
+ <span class="errorlist">{{error}}</span>
+
+ {% endfor %}
+
+
+ <!-- at the end learn one more: inside the class in forms.py file write below line for appling css usinfg class over all form  -->
+viewinspect me alg se clss dikh jayegi
+ error_css_class='error'

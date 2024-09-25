@@ -1,0 +1,4 @@
+# loop form for hidden field   
+# key=forms.CharField(widget=forms.HiddenInput())
+
+
